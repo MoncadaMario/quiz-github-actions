@@ -18,8 +18,8 @@ jobs:
     steps:
       - name: Print app and version
         run: |
-          echo App: $APP_NAME
-          echo Version: $VERSION
+          echo App: App_Prueba
+          echo Version: Version_Prueba
 
       - name: Create timestamp
         id: create_timestamp
@@ -55,7 +55,7 @@ jobs:
 
     steps:
       - name: Deploy message
-        run: echo "Desplegando $APP_NAME v$VERSION"
+        run: echo "Desplegando App_Prueba vVersion_Prueba"
 
       - name: Check secret
         run: echo "Secret configurada correctamente"

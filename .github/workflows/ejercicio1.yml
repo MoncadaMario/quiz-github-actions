@@ -9,9 +9,9 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Step 1 - Presentacion
+      - name: Imprimir nombre
         run: echo "Hola, mi nombre es Mario Moncada"
-      - name: Step 2 - Fecha y hora actual
+      - name: Imprimir fecha y hora
         run: date
-      - name: Step 3 - Sistema operativo
-        run: echo "Sistema operativo: $RUNNER_OS"
+      - name: Imprimir sistema operativo
+        run: echo $RUNNER_OS

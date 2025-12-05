@@ -62,4 +62,9 @@ jobs:
         run: echo "Desplegando $APP_NAME v$VERSION"
 
       - name: Verificar secret
-        run: echo "API_KEY configurada correctamente (longitud: ${#API_KEY})"
+        run: |
+          if [ -n "$API_KEY" ]; then
+            echo "API_KEY configurada correctamente"
+          else
+            echo "API_KEY no configurada"
+          fi
